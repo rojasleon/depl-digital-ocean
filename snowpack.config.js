@@ -21,6 +21,7 @@ module.exports = {
     /* ... */
   },
   buildOptions: {
-    baseUrl: '/depl-digital-ocean',
+    baseUrl: 'https://rojasleon.github.io/depl-digital-ocean/',
+    metaUrlPath: 'dist',
   },
 };
