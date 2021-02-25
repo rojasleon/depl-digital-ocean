@@ -21,6 +21,6 @@ module.exports = {
     /* ... */
   },
   buildOptions: {
-    /* ... */
+    baseUrl: '/depl-digital-ocean',
   },
 };
