@@ -1,6 +1,6 @@
 import "./App.css.proxy.js";
-import React, {Suspense, lazy} from "./pkg/react.js";
-import {HashRouter, Switch, Route} from "./pkg/react-router-dom.js";
+import React, {Suspense, lazy} from "../snowpack/pkg/react.js";
+import {HashRouter, Switch, Route} from "../snowpack/pkg/react-router-dom.js";
 import Layout from "./components/layout.js";
 const Home = lazy(() => import("./pages/index.js"));
 const OtherPage = lazy(() => import("./pages/other-page.js"));
