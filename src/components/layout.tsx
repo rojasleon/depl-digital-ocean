@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from '../logo.svg';
+import logo from '/dist/logo.svg';
 
 const Layout: React.FC = ({ children }) => {
   const [count, setCount] = useState(0);
