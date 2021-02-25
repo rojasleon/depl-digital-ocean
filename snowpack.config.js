@@ -21,7 +21,7 @@ module.exports = {
     /* ... */
   },
   buildOptions: {
-    baseUrl: 'https://rojasleon.github.io/depl-digital-ocean/',
-    metaUrlPath: 'dist',
+    out: 'docs',
+    metaUrlPath: 'snowpack',
   },
 };
