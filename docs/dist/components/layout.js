@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "../../snowpack/pkg/react.js";
-import logo from "../logo.svg.proxy.js";
+import logo from "../logo.svg";
 const Layout = ({children}) => {
   const [count, setCount] = useState(0);
   useEffect(() => {
