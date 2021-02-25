@@ -1,6 +1,6 @@
 import './App.css';
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import Layout from './components/layout';
 
 const Home = lazy(() => import('./pages'));
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <BrowserRouter>
+        <HashRouter basename="/">
           <Suspense fallback={<div>Loading...</div>}>
             <Layout>
               <Switch>
@@ -19,7 +19,7 @@ function App() {
               </Switch>
             </Layout>
           </Suspense>
-        </BrowserRouter>
+        </HashRouter>
       </header>
     </div>
   );
