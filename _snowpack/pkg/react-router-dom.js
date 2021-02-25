@@ -2299,9 +2299,8 @@ react.useContext;
  * The public API for a <Router> that uses HTML5 history.
  */
 
-var BrowserRouter =
 /*#__PURE__*/
-function (_React$Component) {
+(function (_React$Component) {
   _inheritsLoose(BrowserRouter, _React$Component);
 
   function BrowserRouter() {
@@ -2326,14 +2325,15 @@ function (_React$Component) {
   };
 
   return BrowserRouter;
-}(react.Component);
+})(react.Component);
 
 /**
  * The public API for a <Router> that uses window.location.hash.
  */
 
+var HashRouter =
 /*#__PURE__*/
-(function (_React$Component) {
+function (_React$Component) {
   _inheritsLoose(HashRouter, _React$Component);
 
   function HashRouter() {
@@ -2358,7 +2358,7 @@ function (_React$Component) {
   };
 
   return HashRouter;
-})(react.Component);
+}(react.Component);
 
 var resolveToLocation = function resolveToLocation(to, currentLocation) {
   return typeof to === "function" ? to(currentLocation) : to;
@@ -2535,4 +2535,4 @@ forwardRef$1(function (_ref, forwardedRef) {
   });
 });
 
-export { BrowserRouter, Link, Route, Switch };
+export { HashRouter, Link, Route, Switch };
